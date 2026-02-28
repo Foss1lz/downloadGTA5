@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download My Software | Official Landing Page</title>
+    <style>
+        :root {
+            --primary: #00d2ff;
+            --accent: #3a7bd5;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .landing-container {
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .profile-area {
+            margin-bottom: 2rem;
+        }
+
+        .software-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 20px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 210, 255, 0.3);
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            margin: 0 0 0.5rem;
+            letter-spacing: -0.025em;
+        }
+
+        p {
+            color: #94a3b8;
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+        }
+
+        .download-btn {
+            display: block;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px -5px rgba(0, 210, 255, 0.2);
+            filter: brightness(1.1);
+        }
+
+        .footer-info {
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="landing-container">
+        <div class="profile-area">
+            <div class="software-icon">🚀</div>
+            <span class="badge">Open Source</span>
+            <h1>Get me.png</h1>
+            <p>Download the official image asset directly from my local server. Fast, free, and secure.</p>
+        </div>
+
+        <a href="/download" class="download-btn">
+            Download Now
+        </a>
+
+        <div class="footer-info">
+            Running on <strong>Port 5000</strong><br>
+            Hosted on Localhost
+        </div>
+    </div>
+
+</body>
+</html>
